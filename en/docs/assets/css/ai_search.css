@@ -1,0 +1,65 @@
+#ai_popup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    margin: 0%;
+    padding: 5px 16px 10px 44px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ai_popup:hover {
+    background-color: #303030;
+}
+
+#chatbot-icon {
+    display: flex;
+    justify-content:left;
+}
+
+#ai_popup h1 {
+    color: #F47B20;
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+#chatbot-icon svg {
+    fill: #F47B20;
+    width: 30px;
+    height: 30px;
+}
+
+#ai_response {
+    display: none;
+    transition: display 0.3s ease;
+}
+
+.md-search-result__meta {
+    transition: display 0.3s ease;
+}
+
+.md-search-result__list {
+    transition: display 0.3s ease;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 25px;
+    --b: 8px; 
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%,#F47B20) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+    mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation:l4 1s infinite steps(10);
+  }
+  @keyframes l4 {to{transform: rotate(1turn)}}

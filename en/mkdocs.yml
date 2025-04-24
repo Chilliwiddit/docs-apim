@@ -1106,10 +1106,12 @@ extra_css:
     - assets/css/orange-palette.css
     - assets/css/theme.css
     - assets/lib/json-formatter/json-formatter.css
+    - assets/css/ai_search.css
 extra_javascript:
     - assets/lib/json-formatter/json-formatter.umd.js
     - assets/lib/highlightjs/highlight.min.js
     - assets/js/theme.js
+    - assets/js/ai_search.js
 extra:
     social:
         - icon: fontawesome/brands/github-alt
