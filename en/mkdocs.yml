@@ -1112,6 +1112,7 @@ extra_javascript:
     - assets/lib/highlightjs/highlight.min.js
     - assets/js/theme.js
     - assets/js/ai_search.js
+    - https://cdn.jsdelivr.net/npm/marked/marked.min.js 
 extra:
     social:
         - icon: fontawesome/brands/github-alt
